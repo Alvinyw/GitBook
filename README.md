@@ -69,5 +69,7 @@
    $ .\node_modules\.bin\gitbook build
    ```
    执行成功之后你会看到多了一个 **_book** 文件夹，里面就是转换好的 html 文件。
+### 8. 我在 fitboog.io 上创建的 book
+   [gitbook](https://alvinyw.gitbooks.io/mygitbook/content/)
    
    
