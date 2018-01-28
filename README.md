@@ -52,7 +52,7 @@
    你会发现 gitbook 为你建好了 ch1、ch2、end 三个文件夹，且把在 SUMMARY.md 列出来的 md 文件都建好放在了相应文件夹里。
    
    接下来我们只要对应的打开 md 文件填写我们的内容就好。
-### 6. init 了 SUMMARY.md 文件之后，在发布上线之前我们可以预览一下书的样子，执行一下命令行：
+### 6. 预览一下书的样子：
    
    ```javascript
    $ .\node_modules\.bin\gitbook serve
@@ -63,7 +63,7 @@
    http://localhost:4000
    ```
    拷贝该网址在浏览器打开就可以预览书的样式了。
-### 7. 执行下面的命令行来讲 md 文件 build 成 html 文件：
+### 7. 将 md 文件 build 成 html 文件：
    
    ```javascript
    $ .\node_modules\.bin\gitbook build
