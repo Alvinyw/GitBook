@@ -9,5 +9,7 @@
 * [第二章：如何回收火箭](ch2/recycle.md)
     * [1. 自动控制原理](ch2/ac.md)
     * [2. 二次利用要点](ch2/key.md)
+    * [3. 三次利用要点](ch2/three.md)
+    * [4. 四次利用要点](ch2/four.md)
 * [结束](end/SUMMARY.md)
 
