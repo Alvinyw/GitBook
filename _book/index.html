@@ -17,6 +17,18 @@
     
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -32,8 +44,6 @@
 
     
 
-    
-        
     
         
     
@@ -301,7 +311,60 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="gitbook&#xFF1A;&#x501F;&#x52A9;-gitbook-&#x5DE5;&#x5177;&#x521B;&#x5EFA;&#x4E00;&#x672C;&#x4E66;">GitBook&#xFF1A;&#x501F;&#x52A9; gitbook &#x5DE5;&#x5177;&#x521B;&#x5EFA;&#x4E00;&#x672C;&#x4E66;</h1>
-
+<h2 id="&#x521B;&#x5EFA;&#x6B65;&#x9AA4;">&#x521B;&#x5EFA;&#x6B65;&#x9AA4;</h2>
+<h3 id="1-&#x5B89;&#x88C5;-nodejs-&#x548C;-npm-nodejs-&#x7684;&#x5B89;&#x88C5;&#x5305;&#x4E00;&#x822C;&#x4F1A;&#x5305;&#x542B;-npm-&#x7684;&#x5B89;&#x88C5;&#xFF1B;">1. &#x5B89;&#x88C5; <a href="https://nodejs.org/en/" target="_blank">Node.js</a> &#x548C; npm (Node.js &#x7684;&#x5B89;&#x88C5;&#x5305;&#x4E00;&#x822C;&#x4F1A;&#x5305;&#x542B; npm &#x7684;&#x5B89;&#x88C5;)&#xFF1B;</h3>
+<h3 id="2-&#x521B;&#x5EFA;-gitbook-&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x8FDB;&#x5230;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#xFF1A;">2. &#x521B;&#x5EFA; gitbook &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x8FDB;&#x5230;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#xFF1A;</h3>
+<pre><code class="lang-javascript">   $ mkdir /PATH/TO/gitbook
+   $ cd /PATH/TO/gitbook
+</code></pre>
+<h3 id="3-&#x5B89;&#x88C5;-gitbook-&#xFF1A;">3. &#x5B89;&#x88C5; gitbook &#xFF1A;</h3>
+<pre><code class="lang-javascript">   $ npm install gitbook-cli --save-dev
+</code></pre>
+<p>   &#x4E00;&#x822C;&#x4E0D;&#x5EFA;&#x8BAE;&#x5C06;&#x63D2;&#x4EF6;&#x5B89;&#x88C5;&#x5168;&#x5C40;&#xFF1B;</p>
+<h3 id="4-&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x4E66;&#xFF1A;">4. &#x521B;&#x5EFA;&#x4F60;&#x7684;&#x4E66;&#xFF1A;</h3>
+<pre><code class="lang-javascript">   $ gitbook init
+</code></pre>
+<p>   &#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x884C;&#x662F;&#x4F1A;&#x62A5;&#x9519;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x7684;&#x63D2;&#x4EF6;&#x4E0D;&#x662F;&#x88C5;&#x5728;&#x5168;&#x5C40;&#x7684;&#xFF1B;&#x8FD9;&#x65F6;&#x53EF;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-javascript">   $ .\node_modules\.bin\gitbook init
+</code></pre>
+<p>   &#x4F46;&#x662F;&#x636E;&#x6211;&#x6D4B;&#x8BD5;&#x8FC7;&#xFF0C;&#x5C31;&#x7B97;&#x662F;&#x628A;&#x63D2;&#x4EF6;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#xFF0C;&#x6700;&#x4E0A;&#x9762;&#x7684; init &#x547D;&#x4EE4;&#x884C;&#x4E5F;&#x662F;&#x4F1A;&#x62A5;&#x9519;&#x7684;&#xFF0C;&#x6211;&#x731C;&#x60F3;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x628A; Node.js &#x88C5;&#x5728;&#x4E86; C &#x76D8;&#x4E86;&#xFF0C;&#x7136;&#x540E; gitbook   &#x7684;&#x6587;&#x4EF6;&#x5939;&#x6709;&#x8BFB;&#x5199;&#x6743;&#x9650;&#xFF0C;&#x6240;&#x4EE5;&#x62A5;&#x9519;&#x4E86;&#x3002;</p>
+<p>   &#x4F46;&#x6211;&#x6CA1;&#x628A; Node.js &#x5378;&#x4E86;&#x91CD;&#x88C5;&#xFF0C;&#x56E0;&#x4E3A;&#x5DF2;&#x7ECF;&#x88C5;&#x4E86;&#x592A;&#x591A;&#x5E94;&#x7528;&#x7528;&#x5230;&#x4E86; Node.js &#xFF0C;&#x6211;&#x6015;&#x5378;&#x4E86;&#x4E4B;&#x540E;&#x8FDE;&#x8FD9;&#x4E9B;&#x5E94;&#x7528;&#x4E5F;&#x90FD;&#x8981;&#x91CD;&#x88C5;&#xFF0C;&#x8FD9;&#x5C31;&#x592A;&#x5E9F;&#x52B2;&#x4E86;~..~</p>
+<p>   init &#x6210;&#x529F;&#x4E4B;&#x540E;&#x4F1A;&#x770B;&#x5230;&#x6587;&#x4EF6;&#xFF1A; <code>README.md</code> &#x548C; <code>SUMMARY.md</code>&#x3002;</p>
+<h3 id="5-&#x6253;&#x5F00;&#x5E76;&#x7F16;&#x8F91;&#x4E66;&#x76EE;&#x5F55;&#x6587;&#x4EF6;-summarymd-&#xFF1A;">5. &#x6253;&#x5F00;&#x5E76;&#x7F16;&#x8F91;&#x4E66;&#x76EE;&#x5F55;&#x6587;&#x4EF6; SUMMARY.md &#xFF1A;</h3>
+<pre><code class="lang-javascript">    * [Introduction](README.md)
+    * [&#x7B2C;&#x4E00;&#x7AE0;&#xFF1A;&#x5982;&#x4F55;&#x9020;&#x706B;&#x7BAD;](ch1/build.md)
+        * [<span class="hljs-number">1.</span> &#x71C3;&#x6599;&#x5B66;](ch1/fuel.md)
+        * [<span class="hljs-number">2.</span> &#x7A7A;&#x6C14;&#x52A8;&#x529B;&#x5B66;](ch1/air.md)
+        * [<span class="hljs-number">3.</span> &#x603B;&#x88C5;&#x5DE5;&#x7A0B;&#x5B66;](ch1/enginer.md)
+        * [&#x5C0F;&#x7ED3;](ch1/WRAPUP.md)
+    * [&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x5982;&#x4F55;&#x56DE;&#x6536;&#x706B;&#x7BAD;](ch2/recycle.md)
+        * [<span class="hljs-number">1.</span> &#x81EA;&#x52A8;&#x63A7;&#x5236;&#x539F;&#x7406;](ch2/ac.md)
+        * [<span class="hljs-number">2.</span> &#x4E8C;&#x6B21;&#x5229;&#x7528;&#x8981;&#x70B9;](ch2/key.md)
+        * [<span class="hljs-number">3.</span> &#x4E09;&#x6B21;&#x5229;&#x7528;&#x8981;&#x70B9;](ch2/three.md)
+        * [<span class="hljs-number">4.</span> &#x56DB;&#x6B21;&#x5229;&#x7528;&#x8981;&#x70B9;](ch2/four.md)
+    * [&#x7ED3;&#x675F;](end/SUMMARY.md)
+</code></pre>
+<p>   &#x4FDD;&#x5B58;&#x4E4B;&#x540E;&#x518D;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-javascript">   $ .\node_modules\.bin\gitbook init
+</code></pre>
+<p>   &#x4F60;&#x4F1A;&#x53D1;&#x73B0; gitbook &#x4E3A;&#x4F60;&#x5EFA;&#x597D;&#x4E86; ch1&#x3001;ch2&#x3001;end &#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4E14;&#x628A;&#x5728; SUMMARY.md &#x5217;&#x51FA;&#x6765;&#x7684; md &#x6587;&#x4EF6;&#x90FD;&#x5EFA;&#x597D;&#x653E;&#x5728;&#x4E86;&#x76F8;&#x5E94;&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x3002;</p>
+<p>   &#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x5BF9;&#x5E94;&#x7684;&#x6253;&#x5F00; md &#x6587;&#x4EF6;&#x586B;&#x5199;&#x6211;&#x4EEC;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x597D;&#x3002;</p>
+<h3 id="6-&#x9884;&#x89C8;&#x4E00;&#x4E0B;&#x4E66;&#x7684;&#x6837;&#x5B50;&#xFF1A;">6. &#x9884;&#x89C8;&#x4E00;&#x4E0B;&#x4E66;&#x7684;&#x6837;&#x5B50;&#xFF1A;</h3>
+<pre><code class="lang-javascript">   $ .\node_modules\.bin\gitbook serve
+</code></pre>
+<p>   &#x6267;&#x884C;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x7F51;&#x5740;&#xFF1A;</p>
+<pre><code class="lang-javascript">   http:<span class="hljs-comment">//localhost:4000</span>
+</code></pre>
+<p>   &#x62F7;&#x8D1D;&#x8BE5;&#x7F51;&#x5740;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x5C31;&#x53EF;&#x4EE5;&#x9884;&#x89C8;&#x4E66;&#x7684;&#x6837;&#x5F0F;&#x4E86;&#x3002;</p>
+<h3 id="7-&#x5C06;-md-&#x6587;&#x4EF6;-build-&#x6210;-html-&#x6587;&#x4EF6;&#xFF1A;">7. &#x5C06; md &#x6587;&#x4EF6; build &#x6210; html &#x6587;&#x4EF6;&#xFF1A;</h3>
+<pre><code class="lang-javascript">   $ .\node_modules\.bin\gitbook build
+</code></pre>
+<p>   &#x6267;&#x884C;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x591A;&#x4E86;&#x4E00;&#x4E2A; <strong>_book</strong> &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x91CC;&#x9762;&#x5C31;&#x662F;&#x8F6C;&#x6362;&#x597D;&#x7684; html &#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="8-&#x6211;&#x5728;-fitboogio-&#x4E0A;&#x521B;&#x5EFA;&#x7684;-book">8. &#x6211;&#x5728; fitboog.io &#x4E0A;&#x521B;&#x5EFA;&#x7684; book</h3>
+<p>   <a href="https://alvinyw.gitbooks.io/mygitbook/content/" target="_blank">gitbook</a></p>
+<footer class="page-footer"><span class="copyright">&#xA9; Dynamsoft DBR Team all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-01-31
+</span></footer>
                                 
                                 </section>
                             
@@ -340,7 +403,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"第一章：如何造火箭","level":"1.2","depth":1,"path":"ch1/build.md","ref":"ch1/build.md","articles":[{"title":"1. 燃料学","level":"1.2.1","depth":2,"path":"ch1/fuel.md","ref":"ch1/fuel.md","articles":[]},{"title":"2. 空气动力学","level":"1.2.2","depth":2,"path":"ch1/air.md","ref":"ch1/air.md","articles":[]},{"title":"3. 总装工程学","level":"1.2.3","depth":2,"path":"ch1/enginer.md","ref":"ch1/enginer.md","articles":[]},{"title":"小结","level":"1.2.4","depth":2,"path":"ch1/WRAPUP.md","ref":"ch1/WRAPUP.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-01-27T10:00:30.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-27T10:02:10.360Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"第一章：如何造火箭","level":"1.2","depth":1,"path":"ch1/build.md","ref":"ch1/build.md","articles":[{"title":"1. 燃料学","level":"1.2.1","depth":2,"path":"ch1/fuel.md","ref":"ch1/fuel.md","articles":[]},{"title":"2. 空气动力学","level":"1.2.2","depth":2,"path":"ch1/air.md","ref":"ch1/air.md","articles":[]},{"title":"3. 总装工程学","level":"1.2.3","depth":2,"path":"ch1/enginer.md","ref":"ch1/enginer.md","articles":[]},{"title":"小结","level":"1.2.4","depth":2,"path":"ch1/WRAPUP.md","ref":"ch1/WRAPUP.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters","splitter","sharing","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy Dynamsoft DBR Team","modify_label":"该文件修订时间：","modify_format":"2018-01-31"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":true,"instapaper":true,"vk":true,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"README.md","mtime":"2018-01-28T10:09:22.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-02T02:21:07.436Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -348,6 +411,18 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -363,10 +438,6 @@
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
